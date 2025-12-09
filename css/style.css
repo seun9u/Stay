@@ -1,0 +1,406 @@
+@import url(sign_up.css);
+@import url(contents_detail.css);
+@import url(cart.css);
+@import url(pay.css);
+@import url(event.css);
+@import url(review.css);
+@import url(manager.css);
+@import url(inc/deliv.css);
+@import url(inc/fast_move.css);
+@import url(inc/hot_issue.css);
+@import url(inc/reset.css);
+@import url(inc/view_more_menu.css);
+@import url(inc/search.css);
+@import url(inc/table.css);
+@import url(inc/my-page.css);
+@import url(inc/star.css);
+@import url(login.css);
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+:root {
+  --black-han-font: "Black Han Sans", sans-serif;
+  --jua-font: "Jua", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .adv_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(175, 255, 255);
+}
+body #header_wrapper {
+  width: 1100px;
+  height: auto;
+}
+body .main_wrapper {
+  width: 1100px;
+  height: auto;
+}
+body .main_wrapper .view_more_wrapper {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main_wrapper .view_more_wrapper .view_more_btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(86, 88, 153);
+}
+
+.util_nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.util_nav li {
+  margin: 10px 20px 10px 0;
+}
+.util_nav li span {
+  font-size: 12px;
+}
+
+.main_nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.logo_wrapper {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 1px 1px pink;
+  border-radius: 20px;
+}
+.logo_wrapper .logo {
+  color: darkblue;
+  font-size: 28px;
+  font-family: var(--black-han-font);
+}
+
+.like_nav {
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.like_nav .like_nav_title {
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+.cart_nav {
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.cart_nav .cart_nav_title {
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+.my_page_nav {
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.my_page_nav .my_page_nav_title {
+  font-size: 8px;
+  margin-top: 10px;
+}
+
+.main_menu_wrapper {
+  width: 100%;
+  height: 50px;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_menu_wrapper .main_menu_detail {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_menu_wrapper .main_menu_detail i {
+  color: rgb(66, 66, 66);
+}
+.main_menu_wrapper .delivery_today {
+  width: 130px;
+  height: 100%;
+  background-color: rgb(228, 176, 22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.main_menu_wrapper .delivery_today span {
+  color: white;
+  font-weight: 700;
+}
+
+.main_menu_bar {
+  width: 1250px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+.main_menu_bar li {
+  margin-right: 28px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.main_menu_bar .main_menu01 a {
+  color: red;
+}
+.main_menu_bar .main_menu02 a {
+  color: blueviolet;
+}
+.main_menu_bar .main_menu03 a {
+  color: coral;
+}
+
+.banner_main {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_main img {
+  width: 100%;
+  height: auto;
+}
+
+.recommend_main_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recommend_main_wrapper .recommend_main_header {
+  width: calc(100vw - 320px);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+.recommend_main_wrapper .recommend_main_header .recomend_main_title {
+  margin: 0 20px;
+  font-size: 25px;
+  font-family: var(--jua-font);
+}
+
+.sort_nav_wrapper {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sort_nav_wrapper div {
+  padding: 12px 30px;
+  margin: 0 10px;
+  border-radius: 20px;
+  background-color: rgb(212, 212, 212);
+}
+.sort_nav_wrapper .sort_nav01 {
+  background-color: rgb(255, 198, 42);
+  font-weight: 500;
+}
+
+.recommend_main_content_wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  width: calc(100vw - 286px);
+}
+.recommend_main_content_wrapper .recommend_main_contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content {
+  width: 220px;
+  height: auto;
+  margin-right: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_img_wrapper {
+  width: 220px;
+  height: 250px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_img_wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper {
+  width: 220px;
+  height: 90px;
+  box-sizing: border-box;
+}
+.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper .content_name_wrapper {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper .content_name_wrapper .content_name {
+  color: rgb(161, 161, 161);
+  font-size: 12px;
+}
+.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper .content_price_wrapper {
+  width: 100%;
+  height: 25px;
+}
+.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper .content_price_wrapper .discount_rate {
+  color: rgb(210, 96, 119);
+  font-family: "Alkalami", serif;
+  font-size: 19px;
+}
+.recommend_main_content_wrapper .recommend_main_contents .recommend_main_content .content_text_wrapper .content_price_wrapper .content_price {
+  font-size: 15px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-top: 1px solid silver;
+}
+footer .footer_nav_wrapper {
+  width: 1000px;
+  height: 300px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_nav_wrapper .customer_center_wrapper,
+footer .footer_nav_wrapper .haru_operating_time_wrapper,
+footer .footer_nav_wrapper .notice_wrapper,
+footer .footer_nav_wrapper .guide_wrapper,
+footer .footer_nav_wrapper .about_us_wrapper {
+  width: 280px;
+  height: 90%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footer_nav_wrapper .haru_operating_time_wrapper {
+  width: 200px;
+}
+footer .footer_nav_wrapper .haru_operating_time_wrapper span {
+  font-weight: 700;
+}
+footer .footer_nav_wrapper .haru_operating_time_wrapper p {
+  color: rgb(98, 98, 98);
+  line-height: 23px;
+}
+footer .footer_nav_wrapper .customer_center_title,
+footer .footer_nav_wrapper .haru_operating_time_title,
+footer .footer_nav_wrapper .notice_title,
+footer .footer_nav_wrapper .guide_title,
+footer .footer_nav_wrapper .about_us_title {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+footer .footer_nav_wrapper .question_kakao,
+footer .footer_nav_wrapper .return_fast {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+footer .footer_nav_wrapper .haru_call_wrapper {
+  display: flex;
+}
+footer .footer_nav_wrapper .guide_wrapper,
+footer .footer_nav_wrapper .about_us_wrapper {
+  justify-content: flex-start;
+  width: 180px;
+}
+footer .footer_nav_wrapper .guide_wrapper a,
+footer .footer_nav_wrapper .about_us_wrapper a {
+  margin-bottom: 10px;
+}
+footer .footer_nav_wrapper:nth-child(2) {
+  justify-content: flex-start;
+  height: 150px;
+}
+footer .footer_haru_info {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  padding: 35px 260px;
+  color: white;
+  box-sizing: border-box;
+}
+footer .footer_haru_info .about_haru_title {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .footer_haru_info ul {
+  margin-top: 20px;
+  color: rgb(207, 207, 207);
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_haru_info ul li {
+  padding-right: 10px;
+  border-right: 1px solid rgb(78, 78, 78);
+  font-size: 13px;
+  font-weight: 100;
+}
+footer .footer_haru_info ul li:last-child {
+  padding-right: 0;
+  border: none;
+}
+footer .notice_container {
+  width: 100%;
+  height: 180px;
+  border: 0.5px solid rgb(89, 89, 89);
+}/*# sourceMappingURL=style.css.map */

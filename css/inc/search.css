@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes color-1 {
+  0% {
+    background-color: #eb73b9;
+  }
+  100% {
+    background-color: #17ead9;
+  }
+}
+@keyframes color-1 {
+  0% {
+    background-color: #eb73b9;
+  }
+  100% {
+    background-color: #17ead9;
+  }
+}
+::-moz-selection {
+  background: #31449b;
+  color: white;
+  text-shadow: none;
+}
+::selection {
+  background: #31449b;
+  color: white;
+  text-shadow: none;
+}
+
+
+::-webkit-selection {
+  background: #31449b;
+  color: white;
+  text-shadow: none;
+}
+
+
+.field-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 300px;
+  height: 50px;
+}
+
+
+.icons-container {
+  position: absolute;
+  top: 10px; /* 상자와 아이콘의 수직 간격을 조정 */
+  right: 10px; /* 아이콘의 위치를 오른쪽으로 이동 */
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+
+.icon-search {
+  position: relative;
+  top: 0; /* 위치 조정 */
+  left: 0; /* 위치 조정 */
+  width: 50%;
+  height: 50%;
+  opacity: 1;
+  border-radius: 50%;
+  border: 3px solid #b7bedc;
+  transition: opacity 0.25s ease, transform 0.43s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+.icon-search:after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  right: -2px;
+  width: 4px;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+  height: 10px;
+  background-color: #b7bedc;
+}
+
+
+.field {
+  box-sizing: border-box;
+  border: 0;
+  width: 100%; /* 상자의 너비를 100%로 변경 */
+  height: 100%;
+  padding: 10px 20px;
+  background: lightgrey;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+.field:focus {
+  outline: none;
+}
+
+
+.search_wrapper {
+  display: grid;
+  align-items: center;
+  margin: 10px;
+}
+
+
+.search_wrapper_date {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+
+.search_wrapper_peo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}

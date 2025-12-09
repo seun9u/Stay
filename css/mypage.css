@@ -1,0 +1,63 @@
+/* css/style.css */
+
+/* 전체 테이블 스타일 */
+.table.pay {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* 테이블 셀 스타일 */
+.table.pay td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* 주문 내역 타이틀 스타일 */
+.order_title span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 주문 정보 행 스타일 */
+.order_info_header {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+/* 버튼 스타일 */
+.review_write, .review_complete {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 리뷰 작성 버튼 색상 */
+.review_write {
+    background-color: #ff8b8b;
+    color: #fff;
+}
+
+.review_write:hover {
+    background-color: #ff5f5f;
+}
+
+/* 리뷰 완료 버튼 색상 */
+.review_complete {
+    background-color: #d3d3d3;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+/* 이미지 스타일 */
+.img_wrapper img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}

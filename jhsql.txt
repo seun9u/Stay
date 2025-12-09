@@ -1,0 +1,50 @@
+ALTER TABLE onetoone ADD COLUMN content VARCHAR(255);
+content 추가
+
+ALTER TABLE onetoone ADD COLUMN admin_response TEXT AFTER content;
+onetoone 테이블에 admin_response 열을 추가하여 답변을 저장
+
+TRUNCATE TABLE onetoone;
+문의 내역 삭제
+
+메인 컬러#0070c0
+
+ALTER TABLE onetoone ADD COLUMN userid VARCHAR(255) NOT NULL;
+아이디 추가
+
+manager inquiry php css 파일 복붙
+admin_response php 복붙
+
+
+
+
+UPDATE onetoone SET userid = '작성자이름' WHERE id = 2;
+
+
+
+
+
+/* STAY 중앙 로고 */
+.logo_wrapper {
+    text-align: center;
+    padding: 20px 0;
+   
+}
+
+.logo_wrapper a {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0070C0; /* 파란색 */
+    transition: color 0.3s ease;
+}
+
+.logo_wrapper a:hover {
+    color: #0070C0; /* 어두운 파란색 */
+}
+
+
+
+<div class="logo_wrapper">
+        <a href="index.php">STAY</a>
+    </div>

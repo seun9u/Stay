@@ -1,0 +1,120 @@
+/* 기본 바디 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* 전체 컨테이너 */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* 타이틀 스타일 */
+.main_wrapper.sign_up .join_us_title {
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: 70px;
+    color: #0070c0;
+    text-align: center; /* 제목 중앙 정렬 */
+}
+
+/* 헤더 스타일 */
+.header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 폼 그룹 간격 */
+.form-group {
+    margin-bottom: 20px; /* 각 폼 그룹 간의 간격을 일정하게 */
+}
+
+/* 입력 필드 스타일 */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px; 
+}
+
+/* 아이디 입력칸과 문의 유형 간 간격 추가 */
+.form-group#id {
+    margin-bottom: 30px; 
+}
+
+/* 문의 유형 필드와 그 아래 항목 간 간격 추가 */
+.form-group#inquiry-type {
+    margin-bottom: 30px; 
+}
+
+/* 텍스트 영역 */
+.form-group textarea {
+    height: 250px;
+    resize: none;
+}
+
+/* 버튼 스타일 */
+.form-action {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* 제출 버튼 */
+.btn-submit {
+    display: inline-block;
+    background-color: #0070C0;
+    color: white;
+    border: 1px solid #0070c0;
+    padding: 12px 20px; 
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; 
+}
+
+.btn-submit:hover {
+    background-color: #005bb5;
+}
+
+/* 취소 버튼 */
+.btn-cancel {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #0070c0;
+    border: 1px solid #0070c0;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+    background-color: #f0f0f0;
+}
+
+/* 커스텀 이미지 스타일 */
+.custom img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}

@@ -1,0 +1,143 @@
+/* 기본 body 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* 페이지 컨테이너 스타일 */
+#response-page {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* 제목 스타일 */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #0070c0;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0070c0;
+    padding-bottom: 10px;
+}
+
+/* 문의 내용과 작성일 스타일 */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* 강조 텍스트 스타일 */
+p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* 성공 메시지 스타일 */
+p[style="color: green;"] {
+    background-color: #e6f9e6;
+    padding: 10px;
+    border-left: 5px solid #28a745;
+    color: #28a745;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* 텍스트 영역 스타일 */
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+    font-family: inherit;
+}
+
+/* 텍스트 영역 포커스 스타일 */
+textarea:focus {
+    border-color: #0070c0;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 112, 192, 0.2);
+}
+
+/* 버튼 스타일 */
+button[type="submit"] {
+    background-color: #0070c0;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+   
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+   
+}
+
+/* 돌아가기 버튼 스타일 */
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #777;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+
+}
+
+.btn-back:hover {
+    background-color: #555;
+   
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+    #response-page {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+
+    .btn-back {
+        font-size: 14px;
+    }
+}

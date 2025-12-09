@@ -1,0 +1,129 @@
+/* STAY 중앙 로고 */
+.logo_wrapper {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+}
+
+.logo_wrapper a {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0070C0; /* 파란색 */
+    transition: color 0.3s ease;
+}
+
+.logo_wrapper a:hover {
+    color: #0070C0; /* 어두운 파란색 */
+}
+
+/* 기본 레이아웃 */
+.main_wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 20px;
+}
+
+.menus {
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.my-page_title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #0070C0;
+    margin-bottom: 20px;
+}
+
+.menu_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav:hover {
+    background-color: #e3f2fc;
+}
+
+.nav.active {
+    background-color: #0070C0;
+    color: white;
+}
+
+/* 콘텐츠 스타일 */
+.view {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member_pwd_title {
+    font-size: 22px;
+    color: #0070C0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input_text {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button_join {
+    background-color: #0070C0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button_join:hover {
+    background-color: #005a99;
+}
+
+/* 오류 메시지 스타일 */
+.error_message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+    .radio_group {
+        display: flex;
+        gap: 20px; /* 라디오 버튼 사이 간격 */
+        margin-top: 5px; /* 위쪽 레이블과 간격 */
+    }
+
+    .radio_group label {
+        display: flex;
+        align-items: center;
+        gap: 5px; /* 라디오 버튼과 텍스트 사이 간격 */
+        font-size: 16px; /* 텍스트 크기 */
+    }

@@ -1,0 +1,591 @@
+/* 전체 배경 설정 */
+html {
+    overflow-y: scroll; /* 모든 페이지에서 스크롤바 영역 유지 */
+}
+
+
+.header-wrapper {
+  
+    text-align: center;
+    padding: 20px 0; /* 위아래 여백 조정 */
+
+}
+
+.logo {
+    font-size: 40px; /* 로고 글씨 크기 */
+    font-weight: bold;
+    color: var(--primary-color); /* 로고 색상 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--hover-color); /* 호버 시 색상 변경 */
+}
+
+/* 메인 콘텐츠와의 간격 조정 */
+.main_wrapper {
+    margin-top: 20px; /* 로고와 콘텐츠 사이 간격 추가 */
+}
+
+
+/* 색상 변수 정의 */
+:root {
+    --primary-color: #0070C0;
+    --hover-color: #005A9C;
+    --light-gray: #f9f9f9;
+    --border-color: #ddd;
+    --text-color: #333;
+    --button-padding: 10px 20px;
+    --button-radius: 5px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* STAY 중앙 로고 */
+.logo_wrapper {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+}
+
+.logo_wrapper a {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+.header-wrapper {
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 30px 20px;
+        color: #fff;
+}
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0070c0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-left: 20px
+    
+}
+.logo_wrapper a:hover {
+    color: var(--hover-color);
+}
+
+/* 버튼 스타일 */
+button {
+    padding: var(--button-padding);
+    border: none;
+    border-radius: var(--button-radius);
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+.action_buttons {
+    display: flex; /* 버튼을 가로로 배치 */
+    gap: 5px; /* 버튼 간격 */
+    align-items: center; /* 수직 정렬 */
+}
+/* 기본 레이아웃 */
+.main_wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.main_menu_wrapper {
+    flex: 0 0 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.main_display {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+}
+
+/* 메뉴 스타일 */
+.menu_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menus {
+    background-color: var(--light-gray);
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menus:hover {
+    background-color: #e3f2fc;
+    color: black;
+}
+
+.menus.active {
+    background-color: var(--primary-color);
+    color: white;
+    
+}
+
+/* 콘텐츠 스타일 */
+.contents_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.contents_header .search {
+    width: 250px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--button-radius);
+}
+
+/* 테이블 스타일 */
+
+.table_wrapper {
+    width: 100%;
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+    margin-top: 20px; /* 테이블 상단 여백 */
+}
+
+/* 기본 테이블 스타일 */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* 셀 간격 제거 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 테이블 그림자 */
+    font-size: 14px; /* 기본 폰트 크기 */
+}
+
+/* 테이블 헤더 */
+.table th {
+    background-color: #ffffff; /* 헤더 배경색 */
+    font-weight: bold; /* 굵은 글씨 */
+    text-align: center; /* 가운데 정렬 */
+    padding: 15px; /* 헤더 셀 여백 */
+    border-bottom: 2px solid #ddd; /* 헤더와 내용 구분선 */
+}
+
+/* 테이블 내용 셀 */
+.table td {
+    padding: 10px; /* 셀 내부 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    border-bottom: 1px solid #ddd; /* 행 구분선 */
+}
+
+/* 테이블 행 스타일 */
+.table tr:hover {
+    background-color: #f9f9f9; /* 행 호버 시 배경색 */
+}
+
+/* 테이블 행 높이 */
+.table_row {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: space-between; /* 열 정렬 */
+    padding: 7px 0; /* 행 내부 여백 줄이기 (기존: 10px 0) */
+    border-bottom: 1px solid #ddd; /* 행 구분선 */
+    min-height: 50px; /* 최소 높이 줄이기 (기존: 50px) */
+    
+}
+
+/* 마지막 행 구분선 제거 */
+.table_row:last-child {
+    border-bottom: none;
+}
+
+/* 테이블 헤더 스타일 */
+.table_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5; /* 헤더 배경색 */
+    border-bottom: 2px solid #ddd; /* 헤더와 내용 구분선 */
+    height: 50px; /* 헤더 높이 고정 */
+}
+.table_body {
+    display: table;
+    width: 100%;
+    table-layout: fixed;  /* 테이블 내의 열 크기 고정 */
+}
+.table_body {
+    min-height: 384px;  /* 최소 높이를 7행에 맞게 설정 (50px * 7행) */
+}
+/* 테이블 열 스타일 */
+.table_col {
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    width: 16.6%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 빈 행 스타일 */
+.table_row.empty-row {
+    height: 50px;
+    visibility: hidden; /* 데이터가 없을 경우 숨기기 */
+    border-bottom: 1px solid #ddd; /* 빈 행을 위한 경계 추가 */
+}
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .table th, .table td {
+        padding: 10px; /* 작은 화면에서는 여백 축소 */
+        font-size: 12px; /* 폰트 크기 축소 */
+    }
+
+    .table_row {
+        flex-direction: column; /* 작은 화면에서 열을 세로로 정렬 */
+        align-items: flex-start;
+    }
+
+    .table_col {
+        text-align: left; /* 열 텍스트 왼쪽 정렬 */
+    }
+}
+
+
+/* 알림 및 기타 스타일 */
+.message {
+    background-color: var(--light-gray);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.notification:hover {
+    background-color: #e64545;
+}
+
+/* 정렬 버튼 */
+.order_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.order_button {
+    padding: var(--button-padding);
+    border: none;
+    border-radius: var(--button-radius);
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.order_button:hover {
+    background-color: var(--hover-color);
+}
+
+/* 기타 스타일 */
+.login_info {
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.error_message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    margin-top: 20px; /* 위쪽 여백 */
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #0070C0;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #0070C0;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #0070C0;
+    color: white;
+    font-weight: bold;
+}
+
+
+.login_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contents header .title_and_registration {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.board.product {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.point_img .img_insert_header .point_title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.img_thumbnail input,
+.img_more input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.product_detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product_detail div {
+    flex: 1 1 calc(50% - 15px);
+}
+
+.product_detail input,
+.product_detail select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.submit_wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0070C0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-submit-button:hover {
+    background-color: #0070C0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+
+/* 왼쪽 네비게이션 스타일 */
+.sidebar {
+    width: 20%;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a.active {
+    background-color: #0070c0;
+    color: #fff;
+}
+
+.sidebar ul li a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* 오른쪽 콘텐츠 스타일 */
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 테이블 스타일 */
+.table_wrapper {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color : #000000;
+    font-size : 14px;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* 버튼 스타일 */
+.button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #0070c0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* 검색 필드와 버튼 */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.search-bar .button {
+    padding: 10px 15px;
+}
