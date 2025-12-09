@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자주 묻는 질문</title>
-    <link rel="stylesheet" href="payqna.css">
+    <link rel="stylesheet" href="css/payqna.css">
 
     <style>
         .main-page-icon-container {

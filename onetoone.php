@@ -50,7 +50,7 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>문의 관리</title>
-    <link rel="stylesheet" href="onetoone.css">
+    <link rel="stylesheet" href="css/onetoone.css">
 </head>
 <body>
 <style>

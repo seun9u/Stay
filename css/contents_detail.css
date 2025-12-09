@@ -224,18 +224,15 @@ transform: translateY(-3px);
     display: flex; /* 플렉스 박스 */
     align-items: center; /* 아이콘 세로 정렬 */
     justify-content: center; /* 아이콘 중앙 정렬 */
-    color: #0070C0; /* 글씨 색상 추가 */
 }
 
 .cart-btn i {
     color: black; /* 아이콘 색상 */
     font-size: 20px; /* 아이콘 크기 */
-    color: #0070C0; /* 글씨 색상 추가 */
 }
 
 .cart-btn:hover {
     background-color: #f0f0f0; /* 버튼 호버 시 배경 */
-    color: #0070C0; /* 글씨 색상 추가 */
 }
 
 .logo {

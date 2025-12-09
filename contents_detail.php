@@ -45,7 +45,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($row['room_name']); ?> - 상세 정보</title>
-    <link rel="stylesheet" href="contents_detail.css">
+    <link rel="stylesheet" href="css/contents_detail.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
 </head>
 <body>
@@ -134,6 +134,6 @@ $conn->close();
         </div>
     </div>
 
-    <script src="contents_detail.js"></script>
+    <script src="js/contents_detail.js"></script>
 </body>
 </html>
