@@ -64,3 +64,9 @@
     * DB 연결 설정 파일(`db_conn.php`)에서 계정 정보 확인.
 5. **Run**
     * 브라우저에서 `http://localhost/Stay` 접속.
+
+---
+## 👤 Author
+강승구 (Seunggu Kang)   
+Github: https://github.com/seun9u   
+Email: gugusg@naver.com
